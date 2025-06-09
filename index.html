@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Emoji Memory Game</title>
+  </head>
+  <body>
+    <h2>Find the Emoji Match!</h2>
+    <div id="start-screen">
+      <h3>Pick a difficulty:</h3>
+      <button class="difficulty-btn" onclick="startGame('easy')">
+        Easy (12 boxes)
+      </button>
+      <button class="difficulty-btn" onclick="startGame('medium')">
+        Medium (18 boxes)
+      </button>
+      <button class="difficulty-btn" onclick="startGame('hard')">
+        Hard (24 boxes)
+      </button>
+    </div>
+    <div id="timer" style="display: none">Time: 0.0s</div>
+    <div id="score" style="display: none">Score: 0</div>
+    <div id="game-board"></div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
